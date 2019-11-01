@@ -1,0 +1,12 @@
+
+<h1>WORD COUNT IN A TEXTBOX</h1>
+
+<h3><a href="{% url 'aboutreference' %}">About</a></h3>
+<h3><a href="{% url 'home' %}">Reset Text Area</a></h3>
+<form action="{% url 'countreference' %}">
+	<textarea cols="40" rows="10" name="fulltext"></textarea>
+	<br>
+	<br>
+	<br>
+	<input type="submit" name="Count!">
+</form>

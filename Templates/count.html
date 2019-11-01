@@ -1,0 +1,18 @@
+<h1>THERE ARE {{countkey}} WORDS IN THE INPUT TEXT</h1>
+
+<h3><a href="{% url 'home' %}">Start Again</a></h3>
+
+<h3>This is ur text :</h3>
+
+{{msgkey}}
+
+<br>
+<br>
+
+<h1>WORD COUNT :</h1>
+<br>
+{% for word,counttotal in worddict%}
+
+	<h3>{{ word }} : {{counttotal}}</h3>
+
+{% endfor %}
